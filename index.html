@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="imagenes/Logo.jpg">
+        </header>
+
+        <main>
+            <section class="seccion1">
+                <div class="contenedor-texto">
+                    <textarea placeholder="Ingrese el texto aqui" class="caja-texto"></textarea>
+                </div>
+
+                <div class="alerta">
+                    <input type="submit" value="!" class="vector">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div id="botones">
+                    <button class="encriptar">Encriptar</button>
+                    <button class="desencriptar">Desencriptar</button>
+
+                </div>
+            </section>
+
+            <section class="mensaje-encriptado">
+                <div >
+                    <img src="imagenes/Muñeco.jpg" class="muneco">
+                </div>
+
+                <div class="parrafos">   
+                    <p class="text1">Ningún mensaje fue encontrado</p>
+                    <p class="text2">ingrese el texto que desea encriptar o desencriptar</p>
+                </div>
+
+                <div class="copiar" >
+                    <button class="copiar-texto">Copiar</button>
+                </div>
+
+                <div class="resultado">
+                    <p class="texto-resultado"></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="datos">
+                <p>Jose Sanchez <a href="https://www.linkedin.com/in/jos%C3%A9-s%C3%A1nchez-6733b2163/">Mi LinKedin</a> <a href="https://github.com/josesan98"> Mi GitHub</a></p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>
