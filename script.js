@@ -6,6 +6,8 @@ var resultado = document.querySelector(".texto-resultado");
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
+botonEncriptar.addEventListener("click", mostrarBotonCopiar);
+botonDesencriptar.addEventListener("click", mostrarBotonCopiar);
 
 function encriptar(){
     ocultarAdelante();
@@ -91,6 +93,12 @@ function desencriptarTexto(mensaje){
 }
 
 const btnCopiar = document.querySelector(".copiar-texto"); 
+
+function mostrarBotonCopiar(){
+    btnCopiar.style.display = "block";
+}
+
+
     btnCopiar.addEventListener("click", copiar = () => { var contenido = document.querySelector(".texto-resultado").textContent;
     navigator.clipboard.writeText(contenido);    
 })

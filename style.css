@@ -8,16 +8,17 @@ body{
 header{
     width: 100%;
 }
+
 .logo{
-    width: 90px;
-    height: 35px;
+    width: 31.09px;
+    height: 50.58px;
     margin: 40px 0 0 40px;
 }
 
 main{
     margin-left: 130px;
     margin-right: 280px;
-    display: -webkit-box;
+    display: inline-flex;
 }
 
 .seccion1{
@@ -85,7 +86,7 @@ main{
    
 }
 
-.mensaje-encriptado{
+#mensaje-encriptado{
     margin: auto;
     text-align: center;
     background: #ffffff;
@@ -122,9 +123,8 @@ main{
     position: absolute;
     bottom: 440px;
     top: 850px;
-    background: #0A3871;
+    background: #ffffff;
     padding-left: 40px;
-    box-shadow: 0px  #343A40;
 }
 
 .copiar-texto{
@@ -141,6 +141,7 @@ main{
     position: relative;
     top: 50px;
     right: 4px;
+    display: none;
     
 }
 
@@ -177,4 +178,97 @@ footer p, a{
 
 .datos{
     padding-top: 20px;
+}
+
+@media screen and (max-width:375px){
+    body{
+        width: 375px;
+        height: 1715px;
+
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .logo{
+        width: 32px;
+        height: 48px;
+    }
+
+    main{
+        display: block;
+        margin: 0;
+    }
+    
+    .seccion1{
+        width: 375px;
+    }
+
+    .caja-texto::placeholder, .caja-texto{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #botones{
+        text-align: center;
+    }
+
+    .mensaje-encriptado{
+        width: 100%;
+    }
+
+    .muneco{
+        display: none;
+    }
+
+    #mensaje-encriptado{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 15px;
+        text-align: unset;
+        position: relative;
+    }
+
+    .resultado{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: unset;
+
+    }
+
+    .texto-resultado{
+        line-break: anywhere;
+    }
+
+    .copiar{
+        padding-left: none;
+        top: 800px;
+        display: block;
+        bottom: unset;
+    }
+
+    .copiar-texto{
+        top: unset;
+        right: 10px;
+    }
+
+    .datos{
+        top: 0px;
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
 }
